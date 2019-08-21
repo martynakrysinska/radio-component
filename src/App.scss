@@ -1,0 +1,142 @@
+$color1: rgba(234, 242, 239, 1);
+$color2: rgba(145, 47, 86, 1);
+$color3: rgba(82, 25, 69, 1);
+$color4: rgba(54, 31, 39, 1);
+$color5: rgba(13, 9, 10, 1);
+
+html, body {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100%;
+  padding-top: 2%;
+  background-color: $color1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: .3rem;
+
+  main {
+    background-color: $color4;
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+    height: 390px;
+    border-radius: 5%;
+    -webkit-box-shadow: 2px 15px 56px -22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 15px 56px -22px rgba(0,0,0,0.75);
+    box-shadow: 2px 15px 56px -22px rgba(0,0,0,0.75);
+    #radio-header {
+      color: $color1;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      font-size: 3rem;
+      margin-top: 1rem;
+
+      #radio-header-container {
+        display: inline-grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+
+        svg {
+          cursor: pointer;
+          width: 1.5rem;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 400;
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+        }
+      }
+    }
+    #currently-playing {
+      bottom: 0rem;
+      color: $color1;
+      margin-bottom: 1.2rem;
+      position: absolute;
+      text-align: center;
+      width: 100%; 
+
+      #currently-playing-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        #cp1 {
+          color: pink;
+          font-size: 1.5rem
+        }
+        #cp2 {
+          font-size: 2rem
+        }
+      }
+      
+    }
+  #radio {
+    background-color: $color5;
+    color: $color1;
+    top: 15%;
+    width: 92%;
+    height: 60%;
+    overflow: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  
+    .list-item {
+      position: relative;
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid $color2;
+      
+      .list-item-btn:hover {
+        background-color: $color2;
+      }
+      .list-item-btn {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.2rem;
+        margin-top: .5rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+      }
+
+    .radio-view {
+      .radio-view-container {
+       display: grid;
+       grid-template-columns: 1fr 3fr 1fr;
+       padding: 1rem;
+       justify-items: center;
+
+       svg {
+        color: $color2;
+         font-size: 1.5rem;
+         align-self: center;
+         cursor: pointer;
+       }
+
+       svg:hover {
+         font-size: 2rem;
+       }
+      }
+  
+      img {
+        border-radius: 50%;
+        width: 80%;
+        padding: 1rem;
+      }
+  }
+       }
+  
+   
+  }
+  }
+  
+}
+
